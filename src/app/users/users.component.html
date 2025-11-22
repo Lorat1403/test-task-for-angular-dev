@@ -1,1 +1,36 @@
-<p>users works!</p>
+<div class="users-container">
+  <header class="users-header">
+    <div class="users-logo">LOGO</div>
+    <nav class="users-nav">
+      <a *ngFor="let link of headerLinks" href="#" class="users-nav-link">{{ link }}</a>
+    </nav>
+  </header>
+
+  <section class="users-intro-section">
+    <div class="users-intro-content">
+      <h1 class="users-intro-title">Intro</h1>
+      <p class="users-intro-text">Some introduction lines about the website or company</p>
+    </div>
+    <div class="users-intro-placeholder"></div>
+  </section>
+
+  <div class="users-pagination">
+    <span class="users-dot active"></span>
+    <span class="users-dot"></span>
+    <span class="users-dot"></span>
+    <span class="users-dot"></span>
+    <span class="users-dot"></span>
+  </div>
+
+  <section class="users-services-section">
+    <div *ngFor="let service of services" class="users-service-block">Services</div>
+  </section>
+
+  <section class="users-twitter-feed">Twitter Feed</section>
+  <footer class="users-footer">
+    <nav class="users-footer-nav">
+      <a *ngFor="let link of footerLinks" href="#" class="users-footer-link">{{ link }}</a>
+    </nav>
+    <div class="users-footer-info">info</div>
+  </footer>
+</div>
