@@ -2,10 +2,7 @@
 
 .users-container {
   width: 100%;
-
-  // margin: 0 auto;
-  // padding: 0 20px;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   color: $gray-600;
   background-color: $white;
 }
@@ -14,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 30px 80px;
   background-color: $gray-300;
 
   .users-logo {
@@ -40,7 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $gray-300;
-  padding: 40px;
+  padding: 40px 60px;
 
   margin-bottom: 20px;
 
@@ -95,9 +92,9 @@
 .users-services-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
-  padding: 20px 40px;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding: 20px 60px;
 
   .users-service-block {
     background-color: $gray-300;
@@ -120,7 +117,7 @@
   justify-content: start;
   font-size: 30px;
   color: $gray-600;
-  margin-bottom: 50px;
+  margin: 50px 60px;
 }
 
 // --- 6. Footer ---
