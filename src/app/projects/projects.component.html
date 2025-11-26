@@ -1,36 +1,47 @@
-<div class="users-container">
-  <header class="users-header">
-    <div class="users-logo">LOGO</div>
-    <nav class="users-nav">
-      <a *ngFor="let link of headerLinks" href="#" class="users-nav-link">{{ link }}</a>
+<div class="projects-container">
+  <header class="projects-header">
+    <div class="projects-logo">LOGO</div>
+    <nav class="projects-nav">
+      <a *ngFor="let link of headerLinks" href="#" class="projects-nav-link">{{ link }}</a>
     </nav>
   </header>
 
-  <section class="users-intro-section">
-    <div class="users-intro-content">
-      <h1 class="users-intro-title">Intro</h1>
-      <p class="users-intro-text">Some introduction lines about the website or company</p>
+  <section class="projects-intro-section">
+    <div class="projects-intro-content">
+      <h1 class="projects-intro-title">Intro</h1>
+      <p class="projects-intro-text">Some introduction lines about the website or company</p>
     </div>
-    <div class="users-intro-placeholder"></div>
+    <div class="projects-intro-placeholder"></div>
   </section>
 
-  <div class="users-pagination">
-    <span class="users-dot active"></span>
-    <span class="users-dot"></span>
-    <span class="users-dot"></span>
-    <span class="users-dot"></span>
-    <span class="users-dot"></span>
+  <div class="projects-pagination">
+    <span class="projects-dot active"></span>
+    <span class="projects-dot"></span>
+    <span class="projects-dot"></span>
+    <span class="projects-dot"></span>
+    <span class="projects-dot"></span>
   </div>
 
-  <section class="users-services-section">
-    <div *ngFor="let service of services" class="users-service-block">Services</div>
+  <section class="projects-services-section">
+    <div *ngFor="let service of services" class="projects-service-block">Services</div>
   </section>
 
-  <section class="users-twitter-feed">Twitter Feed</section>
-  <footer class="users-footer">
-    <nav class="users-footer-nav">
-      <a *ngFor="let link of footerLinks" href="#" class="users-footer-link">{{ link }}</a>
+  <div *ngIf="weatherData" class="weather-widget">
+    <h3>Погода: {{ weatherData.name }}</h3>
+
+    <div class="weather-info">
+      <p>🌡️ Температура: {{ convertToCelsius(weatherData.main.temp) }}°C</p>
+
+      <p *ngIf="weatherData.weather.length > 0">☁️ Стан: {{ weatherData.weather[0].description }}</p>
+
+      <p>💧 Вологість: {{ weatherData.main.humidity }}%</p>
+    </div>
+  </div>
+  <section class="projects-twitter-feed">Twitter Feed</section>
+  <footer class="projects-footer">
+    <nav class="projects-footer-nav">
+      <a *ngFor="let link of footerLinks" href="#" class="projects-footer-link">{{ link }}</a>
     </nav>
-    <div class="users-footer-info">info</div>
+    <div class="projects-footer-info">info</div>
   </footer>
 </div>

@@ -1,30 +1,30 @@
 @import "../../theme/theme-variables.scss";
 
-.users-container {
+.projects-container {
   width: 100%;
   font-family: Roboto, sans-serif;
   color: $gray-600;
   background-color: $white;
 }
 
-.users-header {
+.projects-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 80px;
   background-color: $gray-300;
 
-  .users-logo {
+  .projects-logo {
     font-weight: bold;
     font-size: 30px;
     color: $gray-600;
   }
 
-  .users-nav {
+  .projects-nav {
     display: flex;
     gap: 20px;
 
-    .users-nav-link {
+    .projects-nav-link {
       text-decoration: none;
       color: $gray-600;
       font-size: 20px;
@@ -33,7 +33,7 @@
 }
 
 // --- 2. Intro Section ---
-.users-intro-section {
+.projects-intro-section {
   display: flex;
   flex-wrap: wrap;
   background-color: $gray-300;
@@ -41,25 +41,25 @@
 
   margin-bottom: 20px;
 
-  .users-intro-content {
+  .projects-intro-content {
     flex: 1;
     padding-left: 20px;
 
-    .users-intro-title {
+    .projects-intro-title {
       font-size: 60px;
       font-weight: bold;
       margin-bottom: 10px;
       color: $gray-600;
     }
 
-    .users-intro-text {
+    .projects-intro-text {
       font-size: 20px;
       line-height: 1.5;
       color: $gray-600;
     }
   }
 
-  .users-intro-placeholder {
+  .projects-intro-placeholder {
     flex: 1;
     background-color: $gray-500;
     height: 250px;
@@ -68,13 +68,13 @@
 }
 
 // --- 3. Pagination Dots ---
-.users-pagination {
+.projects-pagination {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 40px;
 
-  .users-dot {
+  .projects-dot {
     display: block;
     width: 10px;
     height: 10px;
@@ -89,14 +89,14 @@
 }
 
 // --- 4. Services Section ---
-.users-services-section {
+.projects-services-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 20px;
   padding: 20px 60px;
 
-  .users-service-block {
+  .projects-service-block {
     background-color: $gray-300;
     height: 150px;
     display: flex;
@@ -107,8 +107,25 @@
   }
 }
 
+.weather-widget {
+  margin: 20px auto; // Додаємо відступи зверху/знизу
+  padding: 15px;
+  border: 1px solid $gray-300; // Невелика рамка
+  border-radius: 8px;
+  max-width: 800px; // Обмежуємо ширину для кращого вигляду
+  text-align: center;
+  background-color: $gray-300; // Світлий фон
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 // --- 5. Twitter Feed Section ---
-.users-twitter-feed {
+.projects-twitter-feed {
   background-color: $gray-300;
   padding: 40px;
   height: 150px;
@@ -121,26 +138,26 @@
 }
 
 // --- 6. Footer ---
-.users-footer {
+.projects-footer {
   display: flex;
   background-color: $gray-300;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid $gray-200;
-  padding: 20px 40px;
+  padding: 20px 60px;
 
-  .users-footer-nav {
+  .projects-footer-nav {
     display: flex;
     gap: 20px;
 
-    .users-footer-link {
+    .projects-footer-link {
       text-decoration: none;
       color: $gray-600;
       font-size: 20px;
     }
   }
 
-  .users-footer-info {
+  .projects-footer-info {
     font-size: 20px;
     font-weight: bold;
   }
